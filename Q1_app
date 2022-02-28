@@ -1,0 +1,12 @@
+const express=require('Express');
+const path=require('path');
+const app=express();
+const port=80;
+
+app.get('/',(req,res)=>{
+    res.send('Hello, Have a great day')
+});
+
+app.listen(port,()=>{
+    console.log(`App started at port ${port}`);
+});
